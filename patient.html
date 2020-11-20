@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PATIENT</title>
+    <link rel="stylesheet" href="/main.css" />
+
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var myVar = setInterval(myTimer, 1000);
+
+      function myTimer() {
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        document.getElementById("timer").innerHTML = t;
+      }
+    </script>
+    <br />
+    <h1 style="text-align: center">HOSPITAL MANAGEMENT SYSTEM</h1>
+    <p id="timer" style="float: right"></p>
+    <p id="day" style="float: right"></p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <table>
+      <tr>
+        <th
+          style="background-color: black; color: cornsilk; padding: 10px 20px"
+        >
+          MENU
+        </th>
+        <th>
+          <a href="/pregis.html">Patient Registration</a>
+        </th>
+        <th>
+          <a href="/pinfo.html">Patient Information</a>
+        </th>
+        <th>
+          <a href="pcheckout.html">Patient Checkout</a>
+        </th>
+        <th>
+          <a href="/roominfo.html">Room Information</a>
+        </th>
+      </tr>
+    </table>
+    <br />
+    <div>
+      <img src="image.jpg" width="779px" height="400px" />
+    </div>
+    <br />
+    <br />
+    <a href="Home.html" class="home">Home</a>
+    <a href="doctor.html" class="home" style="float: right">Doctor</a>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HMS HOME</title>
+    <link rel="stylesheet" href="/main.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        text-align: center;
+      }
+      .column {
+        float: left;
+        width: 30%;
+        padding: 10px;
+      }
+      .row::after {
+        clear: both;
+      }
+      P {
+        text-align: center;
+        font-size: larger;
+      }
+      .dark-mode {
+        background-color: rgb(30, 30, 30);
+      }
+    </style>
+    <script>
+      function display_c() {
+        var refresh = 1000;
+        mytime = setTimeout("display_ct()", refresh);
+      }
+      function display_ct() {
+        var x = new Date();
+        document.getElementById("ct").innerHTML = x;
+        display_c();
+      }
+    </script>
+  </head>
+  <body onload="display_ct();">
+    <h1 style="text-align: center">
+      <img src="heart.webp" width="170" height="150" /
+      align="middle">&nbsp;HOSPITAL MANAGEMENT SYSTEM
+    </h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="row">
+      <div class="column" style="margin-left: 300px">
+        <h3><u>PATIENT</u></h3>
+        <a href="patient.html" style="padding: 10px"
+          ><img src="patienthome.jpg" style="text-align: center"
+        /></a>
+      </div>
+      <div class="column" style="margin-right: 100px">
+        <h3><u>DOCTOR</u></h3>
+        <a href="doctor.html" style="padding: 10px"
+          ><img src="doctorhome.jpg"
+        /></a>
+      </div>
+    </div>
+    <script src="/hms.js"></script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <b><p id="ct"></p></b>
+    <p><button onclick="myFunction()">Dark mode</button></p>
+
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
